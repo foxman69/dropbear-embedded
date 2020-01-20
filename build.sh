@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ ! -z `command -v $CROSS_COMP-gcc` ]; then
-	CROSS_COMP=""
+if [ ! -z $CROSS_COMP ] && [ -z `command -v $CROSS_COMP-gcc` ]; then
+	unset CROSS_COMP
 fi
 
 wget http://zlib.net/zlib-1.2.11.tar.gz
