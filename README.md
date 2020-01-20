@@ -23,6 +23,7 @@ The build script compiles the binary as a static binary, and `strip`s it at the 
 Building
 --------------------------------------
 	git clone https://github.com/foxman69/dropbear-embedded.git
+	cd dropbear-embedded
 	chmod +x build.sh
 	CROSS_COMP=mipsel ./build.sh
 	file dropbearmulti
