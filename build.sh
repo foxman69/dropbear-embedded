@@ -1,4 +1,9 @@
 #!/bin/sh
+
+if [ ! -z `command -v $(CROSS_COMP)-gcc` ]; then
+	CROSS_COMP=""
+fi
+
 wget http://zlib.net/zlib-1.2.11.tar.gz
 tar xvzf zlib-1.2.11.tar.gz
 mkdir zlib_compiled
