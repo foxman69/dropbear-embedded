@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ ! -z `command -v $(CROSS_COMP)-gcc` ]; then
+if [ ! -z `command -v $CROSS_COMP-gcc` ]; then
 	CROSS_COMP=""
 fi
 
